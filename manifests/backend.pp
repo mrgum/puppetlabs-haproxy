@@ -52,6 +52,7 @@
 #
 define haproxy::backend (
   $collect_exported = true,
+  $mode             = undef,
   $options          = {
     'option'  => [
       'tcplog',

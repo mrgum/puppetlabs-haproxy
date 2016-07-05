@@ -1,5 +1,8 @@
 
 backend <%= @name %>
+<% if @mode -%>
+  mode  <%= @mode %>
+<% end -%>
 <% @options.sort.each do |key, val| -%>
 <% Array(val).each do |item| -%>
   <%= key %>  <%= item %>
